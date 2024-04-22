@@ -1,0 +1,119 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - hobby
+  - feeling_depressed
+  - feeling_anxious_presentation
+  - thanking
+  - feeling_better
+  - realization
+  - provide_thoughts
+  - feeling_reply
+  - feeling_sleep_deprived
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_about_feeling_sleep_deprived:
+  - text: I'm sorry to hear that. Sleep troubles can really affect our well-being. Can you tell me a bit more about what's been going on?
+
+  utter_automatic_thoughts:
+  - text:  It sounds like you're feeling really frustrated with your sleep patterns. Have you noticed any particular thoughts or worries running through your mind when you're trying to sleep?
+
+  utter_challenge_thoughts:
+  - text:  It's common to feel overwhelmed by thoughts about the future, especially when we're lying in bed trying to relax. Let's try something called "thought challenging." When you catch yourself worrying about the next day, ask yourself, "Is there any evidence to suggest that everything will go wrong if I don't sleep perfectly tonight?"
+
+  utter_positive_affirmations:
+  - text: That's a great realization! Our minds often exaggerate the consequences of not sleeping well. It might be helpful to create a relaxing bedtime routine to signal to your body that it's time to wind down. Have you tried any relaxation techniques before bed?
+
+  utter_breathing_exercise:
+  - text: How about trying some deep breathing exercises or progressive muscle relaxation? These techniques can help calm your mind and body before sleep. Would you like to try a quick breathing exercise together?
+
+  utter_execute_breathing_exercise:
+  - text: Okay, let's start by finding a comfortable position. Close your eyes if that feels comfortable for you. Now, take a slow, deep breath in through your nose, counting to four. Hold it for a moment, then exhale slowly through your mouth, counting to six. Let's do that a few more times together.
+
+  utter_glad_to_hear:
+  - text:  I'm glad to hear that! Incorporating relaxation techniques like this into your bedtime routine can help signal to your body that it's time to unwind and prepare for sleep. Remember, consistency is key, so try to practice these techniques every night. And if you ever need more support, I'm here to help.
+  utter_here_for_help:
+  - text: You're very welcome. I'm here to support you on your journey to better sleep and overall well-being. If you have any more questions or need further guidance, don't hesitate to reach out.
+
+  utter_ask_about_feeling_anxious:
+  - text: I understand. Presentations can be daunting, but it's normal to feel nervous before speaking in front of others. Can you tell me more about what specifically is causing you anxiety?
+
+  utter_ask_thoughts:
+  - text: Those are common worries, but let's try to address them together. Have you had any past experiences where you've successfully delivered a presentation or handled a similar situation well?
+
+  utter_challenge_presentation_thoughts:
+  - text: It's understandable to feel the pressure, especially when we perceive the stakes to be higher. However, it might be helpful to remind yourself of those past successes. What do you think contributed to your success in those situations?
+
+  utter_presentation_idea:
+  - text: Exactly! Preparation is key when it comes to managing presentation anxiety. Let's break down the task into smaller, manageable steps. Can you create a plan for preparing for your presentation? This could include tasks like outlining your key points, practicing your delivery, and gathering any necessary materials.
+
+  utter_here_for_help_presentation:
+  - text: Great! Breaking down the task into smaller steps can make it feel more manageable. As you work through each step of your plan, remember to be kind to yourself and acknowledge your efforts along the way. And if you encounter any challenges or setbacks, I'm here to help you problem-solve and offer support.
+
+  utter_glad_to_hear_presentation:
+  - text: You're welcome! I'm glad to hear that you're feeling more optimistic. Remember, it's normal to feel nervous before a presentation, but with preparation and practice, you can build your confidence and deliver a successful presentation. If you ever need further assistance or just want to talk through your feelings, I'm here to help. You've got this!
+
+  utter_ask_about_feeling_depressed:
+  - text: I'm sorry to hear that you're feeling this way. It takes courage to reach out for support. Can you tell me more about what you've been experiencing?
+
+  utter_ask_sleep:
+  - text: It sounds like you're going through a difficult time right now. When we're feeling depressed, it can be challenging to engage in activities that used to bring us joy. Have you noticed any changes in your sleep or appetite?
+
+  utter_asked_for_help:
+  - text: Depression can certainly impact our sleep and appetite. It's important to take care of your physical health as well as your emotional well-being. Have you spoken to anyone about how you're feeling, like a friend, family member, or healthcare professional?
+
+  utter_explore_options:
+  - text: It's common to feel that way, but it's important to remember that you're not alone. Sharing your feelings with someone you trust can provide support and help lighten the emotional load. Additionally, seeking professional help from a therapist or counselor can provide you with strategies to cope with depression and work towards feeling better. Would you be open to exploring these options?
+
+  utter_help_support:
+  - text: That's understandable. Taking the first step can be challenging, but it's a brave and important one. You could start by reaching out to a mental health professional in your area or exploring online therapy options. In the meantime, there are also self-care activities that can help alleviate some of your symptoms, such as going for a walk, practicing deep breathing exercises, or engaging in activities that bring you comfort and relaxation. Would you like to explore some self-care strategies together?
+
+  utter_self_care_activity:
+  - text: Okay, let's start by identifying a few self-care activities that you enjoy or used to enjoy. This could be anything from reading a book, listening to music, spending time in nature, or practicing mindfulness exercises. Once we've identified some activities, we can create a plan to incorporate them into your daily routine. How does that sound?
+
+  utter_brainstorming:
+  - text: Great! Let's begin by brainstorming some activities that you find enjoyable or relaxing. Do you have any hobbies or interests that you used to enjoy before feeling this way?
+
+  utter_hobby:
+  - text: Reading can be a wonderful form of self-care. Is there a particular genre or type of book that you find most enjoyable?
+
+  utter_plan:
+  - text: Fantastic! Reading fiction can transport you to different worlds and provide a temporary escape from everyday stresses. Let's make a plan to incorporate reading into your routine. How about setting aside some time each day to read for pleasure, even if it's just for a few minutes?
+
+  utter_hobby_2:
+  - text: Perfect! Consistency is key, so finding a specific time each day to dedicate to reading can help make it a regular part of your routine. Now, let's explore another activity. Do you have any other hobbies or interests that you used to enjoy?
+
+  utter_plan_2:
+  - text: That's wonderful to hear. Spending time in nature has been shown to have numerous mental health benefits, including reducing stress and improving mood. Let's make a plan to incorporate nature walks into your routine. How about scheduling a short walk in the park a few times a week?
+
+  utter_ack_hobby:
+  - text:  Excellent! Being outdoors and surrounded by nature can provide a much-needed change of scenery and help clear your mind. Remember to take notice of the sights, sounds, and sensations around you during your walks to fully immerse yourself in the experience.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
