@@ -1,0 +1,97 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: User is feeling depressed
+  steps:
+  - intent: feeling_depressed
+  - action: utter_ask_about_feeling_depressed
+  - intent: feeling_reply
+  - action: utter_ask_sleep
+  - intent: provide_thoughts
+  - action: utter_asked_for_help
+  - intent: deny
+  - action: utter_explore_options
+  - intent: affirm
+  - action: utter_help_support
+  - intent: affirm
+  - action: utter_self_care_activity
+  - intent: affirm
+  - action: utter_brainstorming
+  - intent: hobby
+  - action: utter_hobby
+  - intent: hobby
+  - action: utter_plan
+  - intent: affirm
+  - action: utter_hobby_2
+  - intent: hobby
+  - action: utter_plan_2
+  - intent: affirm
+  - action: utter_ack_hobby
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: User is feeling anxious
+  steps:
+  - intent: feeling_anxious_presentation
+  - action: utter_ask_about_feeling_anxious
+  - intent: feeling_reply
+  - action: utter_ask_thoughts
+  - intent: provide_thoughts
+  - action: utter_challenge_presentation_thoughts
+  - intent: realization
+  - action: utter_presentation_idea
+  - intent: affirm
+  - action: utter_here_for_help_presentation
+  - intent: thanking
+  - action: utter_glad_to_hear_presentation
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: User is feeling sleep-deprived
+  steps:
+  - intent: feeling_sleep_deprived
+  - action: utter_ask_about_feeling_sleep_deprived
+  - intent: feeling_reply
+  - action: utter_automatic_thoughts
+  - intent: provide_thoughts
+  - action: utter_challenge_thoughts
+  - intent: realization
+  - action: utter_positive_affirmations
+  - intent: affirm
+  - action: utter_breathing_exercise
+  - intent: affirm
+  - action: utter_execute_breathing_exercise
+  - intent: feeling_better
+  - action: utter_glad_to_hear
+  - intent: thanking
+  - action: utter_here_for_help
+  - intent: goodbye
+  - action: utter_goodbye

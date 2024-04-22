@@ -1,0 +1,186 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - Not really. What do you suggest?
+    - Sure, I'm open to trying anything at this point
+    - That sounds like a good idea. I'll start by outlining my key points and then work on practicing my delivery.
+    - I guess so. I just don't know where to start.
+    - Yeah, I think that might help.
+    - That sounds like a good place to start.
+    - That sounds doable. I can try reading before bed or during my lunch break.
+    - That sounds like a refreshing idea. I can try going for a walk after work or on the weekends.
+
+
+- intent: deny
+  examples: |
+    - Not really. I feel like I don't want to burden anyone with my problems.
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: feeling_sleep_deprived
+  examples: |
+    - Hi there, I've been having trouble sleeping lately.
+    - I am feeling sleep-deprived.
+    - I have not been getting enough sleep.
+    - I couldn't sleep at all last night.
+    - I've been tossing and turning for hours.
+    - I feel like a zombie today.
+    - My eyes are heavy, but I can't seem to fall asleep.
+    - I'm so tired even though I went to bed early. 
+    - I feel like I need a gallon of coffee just to stay awake.
+    - I'm yawning non-stop despite getting some sleep.
+
+- intent: feeling_reply
+  examples: |
+    - Yeah, it's like no matter what I do, I just can't seem to fall asleep at night. I toss and turn for hours
+    - I'm just afraid of messing up in front of everyone. What if I forget what to say or stumble over my words?
+    -  It's like I have no energy or motivation to do anything. I used to enjoy my hobbies and spending time with friends, but now everything just feels so overwhelming.
+
+- intent: provide_thoughts
+  examples: |
+    - Yeah, there have been a few times where I've done okay. But this time feels different, and the stakes seem higher
+    - Well, I keep thinking about all the things I need to do the next day, and then I start worrying that I won't be able to handle it all if I don't get enough sleep.
+    - Yeah, I've been having trouble sleeping, and I've either been eating too much or not enough. I just feel so numb most of the time.
+    - "I can't seem to shake off this feeling of failure."
+    - "I keep thinking I'll never catch up on my tasks."
+    - "I'm constantly worrying about not being able to perform well."
+    - "I feel like I'm letting everyone down."
+    - "I keep doubting my abilities to handle the workload."
+    - "I'm overwhelmed by the thought of not being good enough."
+    - "I can't stop thinking about all the things that could go wrong."
+    - "I feel like I'm drowning in self-doubt."
+    - "I'm stuck in a cycle of negative thoughts about my performance."
+    - "I keep replaying my mistakes in my mind, and it's exhausting."
+
+- intent: realization
+  examples: |
+    - Hmm, I guess not really. Most of the time, things turn out okay even if I don't get the best sleep.
+    - I guess I was well-prepared and practiced a lot beforehand.
+    - I have done this work before, and have performed much better
+
+- intent: feeling_better
+  examples: |
+    - That actually feels really nice. I already feel a bit more relaxed.
+    - "Talking to a friend about how I've been feeling has really helped me feel better."
+    - "Taking time for self-care activities like reading and listening to music has made a noticeable difference in my mood."
+    - "I've been attending therapy sessions regularly, and I'm starting to notice improvements in my overall well-being."
+    - "Getting enough sleep and prioritizing my physical health has been key in helping me feel better."
+    - "I've been practicing mindfulness meditation every day, and it's been a powerful tool for managing my stress and anxiety."
+    - "Engaging in hobbies that I enjoy, like painting and cooking, has been bringing me a lot of joy and fulfillment."
+
+- intent: thanking
+  examples: |
+    - Thank you so much. I feel like I have a better idea of what I can do now to improve my sleep.
+    - Thank you, I really appreciate your guidance. I already feel a bit better knowing that I have a plan in place.
+    - thankyou
+
+- intent: feeling_anxious_presentation
+  examples: |
+    - I have a big presentation coming up, and I'm feeling really anxious about it.
+    - "I'm feeling really anxious about my upcoming presentation. I keep worrying that I'll mess up."
+    - "Does anyone else get really nervous before giving a presentation? I feel like I'm the only one."
+    - "I have a presentation tomorrow, and I can't stop feeling anxious about it. What should I do?"
+    - "Every time I have to speak in front of a group, I get incredibly anxious. It's starting to affect my performance."
+    - "I'm dreading this presentation so much that I can't even focus on preparing for it."
+    - "Just thinking about standing up in front of my classmates makes my heart race. How can I calm down?"
+    - "I know I need to give this presentation, but the thought of it is making me feel sick with anxiety."
+    - "I've been losing sleep over this presentation for weeks. How can I stop feeling so anxious about it?"
+    - "I've been avoiding practicing my presentation because it makes me feel so anxious. How can I overcome this fear?"
+    - "My anxiety about giving presentations is getting worse and worse. I don't know how to cope anymore."
+
+- intent: feeling_depressed
+  examples: |
+    - Hi, I've been feeling really down lately, and I think I might be slipping into depression.
+    - I'm feeling down
+    - I feel depressed
+    - I'm not feeling well
+    - I feel sad
+
+- intent: hobby
+  examples: |
+    - Well, I used to love reading. It helped me escape from reality for a while
+    - I usually enjoy fiction, especially fantasy novels.
+    - I used to enjoy going for walks in the park. Being surrounded by nature always made me feel more at peace.
